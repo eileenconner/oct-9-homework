@@ -34,3 +34,15 @@ p {
 a {
     color: #FF5050;
 }
+
+/* adding these for base.html styling extras */
+
+#page-heading {
+    font-style: oblique;
+    text-align: center;
+}
+footer {
+    font-size: 50%;
+    font-style: oblique;
+    text-align: center;
+}

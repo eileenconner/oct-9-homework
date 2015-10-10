@@ -1,14 +1,11 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="../static/styles.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Apply to work at Ubermelon!{% endblock %}
+
+{%block content %}
     <!-- Application form for Ubermelon eng team -->
 
-    <h1>Apply for a position at Ubermelon! The best company ever!</h1>
+    <h3>Apply for a position at Ubermelon! The best company ever!</h3>
 
     <div id="instruction">
         <p>We here at Ubermelon provide the best melons to the best customers. At 
@@ -32,8 +29,4 @@
         </select><br> 
         <label><input type="submit"></label>
     </form>
-
-    <!-- I'm not quite sure exactly where to use labels or how to use them most effectively. -->
-
-</body>
-</html>
+{% endblock %}

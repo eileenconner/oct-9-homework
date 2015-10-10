@@ -1,14 +1,12 @@
-<!doctype html>
-<html>
-<head>
-    <link rel="stylesheet" href="/static/styles.css">
-    <meta charset="UTF-8">
-    <title>Application Response</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}We've received your application!{% endblock %}
+
+{%block content %}
+
     <h1>Thank you for your application!</h1>
     <p>Thank you, {{ first_name }} {{ last_name }}, for applying to be a {{ title }}. Your minimum salary requirement is {{ salary }} dollars.</p>
+
     <h3>Your decades-long melon-shuffling career is about to begin!</h3>
 
-</body>
-</html>
+{% endblock %}
