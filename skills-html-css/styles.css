@@ -1,1 +1,25 @@
 /*your CSS goes here*/
+
+/*Change the background color of all of the form input boxes and submit button to be yellow 
+(can you do this for all input boxes without having to stylize each one independently?)
+Change the text in the last name field to be bold (hint: that’s the font-weight property).
+Draw a border around the instruction box.*/
+
+/* classes vs ids -- we want ids for single use */
+/* I'm not sure why I am getting "don't use ids in selectors" on 16, 22 */
+/* Isn't this exactly where & how we're supposed to use ids? */
+
+.form-element {
+    background-color: yellow;
+}
+
+#lastname {
+    font-weight: bold;
+}
+
+/* what on earth is the instruction box? */
+/* I'm interpreting that as the explanatory text. */
+#instruction {
+    border: 2px solid black;
+}
+

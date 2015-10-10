@@ -3,8 +3,47 @@
     <head>
         <meta charset="UTF-8">
         <title>Skills-HTML-CSS</title>
+        <!-- include styles.css in application-form.html using a <script> tag. -->
+        <!-- The info I've found says <script> is for including Javascript. ?? -->
+        <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
         <!-- your html goes here -->
+
+        <h1>Apply for a position at Ubermelon! The best company ever!</h1>
+
+        <div id="instruction">
+            <p>We here at Ubermelon provide the best melons to the best customers. At 
+            Ubermelon, melons come first. Our customers are extremely satisfied with 
+            our amazing breadth and depth of melon selection at extremely reasonable, 
+            almost too-reasonable, prices. Apply to become a part of our melon-focused 
+            team today!</p>
+            <p>Enter your information to join the greatest melon-oriented team ever!</p>
+        </div>
+
+        <form class="form-element" action="/application" method="POST"> <!-- may have to add more stuff elsewhere for POST to work -->
+            Last name: <input id="lastname" type="text" name="lastname"><br>
+            First name: <input type="text" name="firstname"><br>
+            Salary requirement: <input type="number" name="salaryreq" min="0" max="100000"><br>
+
+            <p>What job are you applying for?</p>
+            <select name="jobtitle">
+                <option value="software_engineer">Software Engineer</option>
+                <option value="qa_eng">QA Engineer</option>
+                <option value="product_manager">Product Manager</option>
+            </select><br> 
+            <input type="submit">
+        </form>
+
+        <!-- form that asks user:
+        first name textfield
+        last name textfield
+        salary requirment (number)
+        dropdown of jobs applying for: software engineer, qa eng, product mgr
+
+        submit button that submits to form /application as POST request
+
+        include a large heading and explanatory text. DONE -->
+
     </body>
 </html>
