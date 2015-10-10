@@ -3,10 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
     <!-- This page needs a form that can capture data about the user's
     first name, last name, job title, and salary requirements. -->
+        <h1>Apply for a position at Ubermelon! The best company ever!</h1>
+
+    <div id="instruction">
+        <p>We here at Ubermelon provide the best melons to the best customers. At 
+        Ubermelon, melons come first. Our customers are extremely satisfied with 
+        our amazing breadth and depth of melon selection at extremely reasonable, 
+        almost too-reasonable, prices. Apply to become a part of our melon-focused 
+        team today!</p>
+        <p>Enter your information to join the greatest melon-oriented team ever!</p>
+    </div>
+
+    <form class="form-element" action="/application" method="POST"> 
+        Last name: <input id="lastname" type="text" name="lastname"><br>
+        First name: <input type="text" name="firstname"><br>
+        Salary requirement: <input type="number" name="salaryreq" min="0" max="100000"><br>
+
+        <p>What job are you applying for?</p>
+        <select name="jobtitle">
+            <option value="software_engineer">Software Engineer</option>
+            <option value="qa_eng">QA Engineer</option>
+            <option value="product_manager">Product Manager</option>
+        </select><br> 
+        <input type="submit">
+    </form>
 </body>
 </html>
