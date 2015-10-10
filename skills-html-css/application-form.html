@@ -3,12 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <title>Skills-HTML-CSS</title>
-        <!-- include styles.css in application-form.html using a <script> tag. -->
-        <!-- The info I've found says <script> is for including Javascript. ?? -->
         <link rel="stylesheet" href="./styles.css">
     </head>
     <body>
-        <!-- your html goes here -->
+        <!-- Application form for Ubermelon eng team -->
 
         <h1>Apply for a position at Ubermelon! The best company ever!</h1>
 
@@ -21,29 +19,21 @@
             <p>Enter your information to join the greatest melon-oriented team ever!</p>
         </div>
 
-        <form class="form-element" action="/application" method="POST"> <!-- may have to add more stuff elsewhere for POST to work -->
-            Last name: <input id="lastname" type="text" name="lastname"><br>
-            First name: <input type="text" name="firstname"><br>
-            Salary requirement: <input type="number" name="salaryreq" min="0" max="100000"><br>
+        <form class="form-element" action="/application" method="POST"> 
+            <label>Last name: <input id="lastname" type="text" name="lastname"></label><br>
+            <label>First name: <input type="text" name="firstname"></label><br>
+            <label>Salary requirement: <input type="number" name="salaryreq" min="0" max="100000"></label><br>
 
             <p>What job are you applying for?</p>
-            <select name="jobtitle">
-                <option value="software_engineer">Software Engineer</option>
-                <option value="qa_eng">QA Engineer</option>
-                <option value="product_manager">Product Manager</option>
+            <label><select name="jobtitle"></label>
+                <label><option value="software_engineer">Software Engineer</option></label>
+                <label><option value="qa_eng">QA Engineer</option></label>
+                <label><option value="product_manager">Product Manager</option></label>
             </select><br> 
-            <input type="submit">
+            <label><input type="submit"></label>
         </form>
 
-        <!-- form that asks user:
-        first name textfield
-        last name textfield
-        salary requirment (number)
-        dropdown of jobs applying for: software engineer, qa eng, product mgr
-
-        submit button that submits to form /application as POST request
-
-        include a large heading and explanatory text. DONE -->
+        <!-- I'm not quite sure exactly where to use labels or how to use them most effectively. -->
 
     </body>
 </html>

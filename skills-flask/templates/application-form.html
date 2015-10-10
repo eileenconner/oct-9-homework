@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="../static/styles.css">
 </head>
 <body>
-    <!-- This page needs a form that can capture data about the user's
-    first name, last name, job title, and salary requirements. -->
-        <h1>Apply for a position at Ubermelon! The best company ever!</h1>
+    <!-- Application form for Ubermelon eng team -->
+
+    <h1>Apply for a position at Ubermelon! The best company ever!</h1>
 
     <div id="instruction">
         <p>We here at Ubermelon provide the best melons to the best customers. At 
@@ -20,17 +20,20 @@
     </div>
 
     <form class="form-element" action="/application" method="POST"> 
-        Last name: <input id="lastname" type="text" name="lastname"><br>
-        First name: <input type="text" name="firstname"><br>
-        Salary requirement: <input type="number" name="salaryreq" min="0" max="100000"><br>
+        <label>Last name: <input id="lastname" type="text" name="lastname"></label><br>
+        <label>First name: <input type="text" name="firstname"></label><br>
+        <label>Salary requirement: <input type="number" name="salaryreq" min="0" max="100000"></label><br>
 
         <p>What job are you applying for?</p>
-        <select name="jobtitle">
-            <option value="software_engineer">Software Engineer</option>
-            <option value="qa_eng">QA Engineer</option>
-            <option value="product_manager">Product Manager</option>
+        <label><select name="jobtitle"></label>
+            <label><option value="software_engineer">Software Engineer</option></label>
+            <label><option value="qa_eng">QA Engineer</option></label>
+            <label><option value="product_manager">Product Manager</option></label>
         </select><br> 
-        <input type="submit">
+        <label><input type="submit"></label>
     </form>
+
+    <!-- I'm not quite sure exactly where to use labels or how to use them most effectively. -->
+
 </body>
 </html>

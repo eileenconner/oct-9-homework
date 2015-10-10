@@ -23,3 +23,25 @@ Draw a border around the instruction box.*/
     border: 2px solid black;
 }
 
+/* Adding these for fun */
+/* And also appropriate melonosity */
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+h1 {
+    color: #00CC66;
+}
+
+h3 {
+    color: #008F47;
+}
+
+p {
+    color: #FF9966;
+}
+
+a {
+    color: #FF5050;
+}
